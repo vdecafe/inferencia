@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto=swap');
+
+body {
+  font-size: 20px;
+}
+
+.help-block {
+  font-size: 20px !important;
+}
+
+h2 {
+  font-size: 30px;
+
+}
+
+
+h5 {
+  font-family: 'Roboto', sans-serif;
+  color: #f8d3c5;
+  font-size: 15px;
+}
+
+p {
+  list-style: circle;
+  margin-left: 20px;
+
+}
+
+li {
+  margin-left: 20px;
+  font-style: italic;
+  font-weight: normal;
+
+}
+
+ul {
+  margin-left: 20px;
+  font-style: italic;
+  font-weight: normal;
+
+}
+
+h6 {
+
+  margin-left: 20px;
+  font-weight: normal;
+  color: #667b68;
+  font-style: italic;
+
+}
+
+
+.app_title {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+  background-color: #667b68;
+  color: #482e1d;
+  padding: 1%;
+}
+
+.footer_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10%;
+  align-content: center;
+  justify-content: center;
+  align-items: start;
+  justify-items: center;
+  background-color: #667b68;
+  color: #482e1d;
+  padding: 3%;
+  margin-top: 4%;
+}
+
+a:link {
+  color: #f8d3c5;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #f8d3c5;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f8d3c5;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #f8d3c5;
+  background-color: transparent;
+  text-decoration: underline;
+}
