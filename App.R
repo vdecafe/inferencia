@@ -531,8 +531,8 @@ server <- function(input, output) {
       
     } else {
       
-      ICInf <- mean - qnorm(alfa/2, lower.tail = FALSE)*varprob/sqrt(n)
-      ICSup <- mean + qnorm(alfa/2, lower.tail = FALSE)*varprob/sqrt(n)
+      ICInf <- mean - qnorm(alfa/2, lower.tail = FALSE)*sqrt(varprob)/sqrt(n)
+      ICSup <- mean + qnorm(alfa/2, lower.tail = FALSE)*sqrt(varprob)/sqrt(n)
       
     }
     
@@ -936,7 +936,7 @@ server <- function(input, output) {
           paste0(
             "IC al ", (1 - input$alpha) * 100, " % para \\(\\mu = \\bar{X} \\pm z_{\\alpha/2} \\dfrac{\\sigma}{\\sqrt{n}} = \\) ",
             input$smean_onemean, "  \\( \\pm \\) ", "\\( ( \\)", round(qnorm(input$alpha / 2, mean = 0, sd=1, lower.tail = FALSE), 3), 
-            " * ", round(sqrt(input$sigma2_onemean) / sqrt(input$n_onemean),3), 
+            " * ", round(sqrt(input$sigma2_onemean),3), 
             " / ", round((sqrt(input$n_onemean)), 3), "\\( ) \\) ", "\\( = \\) ",
             "[", round(IC[1], 3), "; ", round(IC[2], 3), "]"),
           br(),
