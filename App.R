@@ -1014,7 +1014,7 @@ server <- function(input, output) {
     vnum <- ((varmuestral1 / n1) + (varmuestral2 / n2))^2
     vden <- ((varmuestral1 / n1)^2 / (n1 - 1)) + ((varmuestral2 / n2)^2 / (n2 - 1))
     v <- vnum / vden
-    estadistico <- (M1 - M2 - m0) / (sqrt((varmuestral1 / n1) + (varmuestral1 / n2)))
+    estadistico <- (M1 - M2 - m0) / (sqrt((varmuestral1 / n1) + (varmuestral2 / n2)))
 
     if (Alternativa == "two.sided") {
       if (estadistico > 0) {
